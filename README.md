@@ -1,3 +1,7 @@
+This is an analysis of COVID 19 data for select states within the United States.
+
+Source data is pulled from Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE)
+
 # 2019 Novel Coronavirus COVID-19 (2019-nCoV) Data Repository by Johns Hopkins CSSE
 
 
