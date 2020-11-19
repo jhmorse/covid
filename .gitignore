@@ -1,5 +1,10 @@
 .DS_Store
 
+# R Markdown output
+*.pdf
+*.docx
+*.pptx
+
 # History files
 .Rhistory
 .Rapp.history

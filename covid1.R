@@ -23,7 +23,7 @@ library(scales)
 # 3/13: See above. All records dated 3/11. Assuming file incorrect.
 #      Forcing all records in this file to be 3/13.
 # 3/14: Validated results of 572, 37, 1, which is a small
-#      increase of only 4 cases taht day.
+#      increase of only 4 cases that day.
 # 3/18: Confirmed total of 1014, 55, 0. This is decrease of 62
 #      from prior day. Confirmed 3/17 with 1076, 55, 1.
 #      assuming this was a correction of results and data
