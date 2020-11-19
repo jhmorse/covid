@@ -3,9 +3,9 @@ library(lubridate)
 library(gridExtra)
 library(scales)
 
-source('covidDataCollect2.R')
-source('covidStatesData2.R')
-source('covidGraph2.R')
+source('covidDataCollect.R')
+source('covidStatesData.R')
+source('covidGraph.R')
 
 
 ##################################################################
@@ -13,7 +13,7 @@ source('covidGraph2.R')
 # Define standard variables for date range
 startDate <- as.Date("2020-03-01")  # default to start of data availability
 endDate <- today() - 1              # End date is always day before today
-#endDate <- as.Date('2020-08-10')
+#endDate <- as.Date('2020-10-12')
 sCovidUSCSV <- "covidus.csv"        # default name of source file with prior data
 
 # Identify the location of the source files

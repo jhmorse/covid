@@ -22,9 +22,9 @@ library(lubridate)
 library(gridExtra)
 library(scales)
 
-source('covidDataCollect2.R')
-source('covidStatesData2.R')
-source('covidGraph2.R')
+source('covidDataCollect.R')
+source('covidStatesData.R')
+source('covidGraph.R')
 
 ```
 
@@ -46,7 +46,7 @@ cStName <- c('Washington', 'Colorado', 'Minnesota', 'California', 'Montana')
 
 ```
 
-```{r build_states, include=FALSE}
+```{r read_file, include=FALSE}
 
 # Call the function that reads in the CSV file
 covidusFile <- readData(sCovidUSCSV)
@@ -62,6 +62,10 @@ if (!is.null(covidusFile)) {
     filter(Last_Update != startDate)
 }
 # If we could not read in the file, then leave the start date as is.
+
+```
+
+```{r build_states, include=FALSE}
 
 # Call the function from our DataCollect file
 # to go get new data from the web
