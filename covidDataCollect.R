@@ -29,9 +29,12 @@ getNewData <- function(startDate, endDate, locPrefix, locSuffix, sCountry='US') 
   
   # Loop through the dates
   indx <- as.integer(endDate - startDate)
+  print(paste("indx:",indx))
+  
   for (i in 0:indx) {
     # Format the next date for the file name
     sdate <- format(startDate + i, format="%m-%d-%Y")
+    print(paste("sdate:",sdate))
     
     # Source the next file
     loc <- paste(locPrefix, sdate, locSuffix, sep = "")
@@ -47,10 +50,12 @@ getNewData <- function(startDate, endDate, locPrefix, locSuffix, sCountry='US') 
     check <- safe_mutate(covid, Last_Update = `Last Update`)
     if (!is.null(check$result))
       covid <- check$result
+
     # Convert Last_Update to date
     check <- safe_mutate(covid, Last_Update = as.Date(as.character(Last_Update), tryFormats = c("%m/%d/%y", "%Y-%m-%d")))
     if (!is.null(check$result))
       covid <- check$result
+
     # Check for incorrect date assignment in record
     # based on known data issues
     if (sdate == "03-13-2020") {

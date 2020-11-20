@@ -7,6 +7,8 @@ Source data is pulled from Johns Hopkins University Center for Systems Science a
 
 This is the data repository for the 2019 Novel Coronavirus Visual Dashboard operated by the Johns Hopkins University Center for Systems Science and Engineering (JHU CSSE). Also, Supported by ESRI Living Atlas Team and the Johns Hopkins University Applied Physics Lab (JHU APL).
 
+
+
 <br>
 
 <b>Visual Dashboard (desktop):</b><br>

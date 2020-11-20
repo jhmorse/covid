@@ -7,7 +7,6 @@ source('covidDataCollect.R')
 source('covidStatesData.R')
 source('covidGraph.R')
 
-
 ##################################################################
 
 # Define standard variables for date range
